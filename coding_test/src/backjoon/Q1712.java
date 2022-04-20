@@ -1,4 +1,4 @@
-package day4;
+package backjoon;
 
 import java.util.Scanner;
 

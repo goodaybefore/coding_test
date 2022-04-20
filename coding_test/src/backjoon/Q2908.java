@@ -1,4 +1,4 @@
-package day2;
+package backjoon;
 
 import java.util.Scanner;
 //백준 단계별로 풀어보기 - 문자열 - 상수
