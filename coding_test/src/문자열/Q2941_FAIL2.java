@@ -1,4 +1,4 @@
-package backjoon;
+package 문자열;
 //정답지 보고 Scanner로 바꿔쓴것.. 내가 한거랑 다를게 없어보이는데
 //틀렸음.왜지?
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package backjoon;
+package 기본수학1;
 
 
 import java.util.Scanner;

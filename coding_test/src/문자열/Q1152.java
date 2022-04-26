@@ -1,4 +1,4 @@
-package backjoon;
+package 문자열;
 //백준 단계별로 풀어보기 - 문자열 - 단어의 개수
 import java.util.Scanner;
 
