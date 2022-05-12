@@ -1,5 +1,5 @@
 package 재귀;
-
+//재귀가 전체적으로 너무 어려움...ㅠㅠ
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
