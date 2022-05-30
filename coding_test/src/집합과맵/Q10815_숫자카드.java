@@ -34,7 +34,7 @@ public class Q10815_숫자카드 {
 	}
 	public static boolean binarySearch(int[] arr, int key) {
 		int low = 0;
-		int high = arr.length-1;
+		int high = arr.length-1; // arr.length - 1을 해주어야 0~(n-1)번까지 적용가능
 		while(low <= high) {
 			int mid =(low + high) / 2;
 			if(arr[mid] == key) return true;
