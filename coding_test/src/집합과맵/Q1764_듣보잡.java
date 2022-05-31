@@ -36,7 +36,8 @@ public class Q1764_듣보잡 {
 			}
 		}
 		
-		Collections.sort(list);
+		Collections.sort(list);//리스트를 사전순 정렬
+		
 		for(String tmp : list) sb.append(tmp).append("\n");
 		System.out.println(list.size());
 		System.out.println(sb);
