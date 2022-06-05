@@ -48,19 +48,11 @@ public class Q1004_어린왕자 {
 		System.out.println(sb);
 	}
 	public static boolean isContain(Point circle, int r, Point point) {
-		double distance = Math.sqrt(Math.pow(circle.x - point.x, 2) + Math.pow(circle.y - point.y, 2));
+		double distance = Math.sqrt(Math.pow(circle.getX() - point.getX(), 2) + Math.pow(circle.getY() - point.getY(), 2));
 		if(distance <= r) {
 			return true;
 		}
 		else return false;
 	}
 
-}
-class Point{
-	int x;
-	int y;
-	Point(int x, int y){
-		this.x = x;
-		this.y = y;
-	}
 }
