@@ -17,7 +17,7 @@ public class Test220610_실습 {
 //		System.out.println(solution2(q2));
 		
 		int q3[] = {1,1,3,3,0,1,1};
-		solution3(q3);
+		System.out.println(Arrays.toString(solution3(q3)));
 		
 	}
 	//1. 로또 번호 검출기
@@ -32,34 +32,36 @@ public class Test220610_실습 {
 		for(int i=0;i<lotto.length;i++) {
 			list.add(lotto[i]);
 		}
-		if(lotto.length != list.size()) answer = false;
-		return answer;
+		return lotto.length != list.size();
 	}
 	//2. 끝말 잇기
 	public static boolean solution2(String[] words) {
 		boolean answer = true;
 		Set<String> set = new HashSet<String>();
-		for(int i=0;i<words.length;i++) {
-			set.add(words[i]);
-			if(i<words.length-1) {
-				String lastChar = String.valueOf(words[i].charAt(words[i].length()-1));
-				String firstChar = String.valueOf(words[i+1].charAt(0));
-				if(!lastChar.equals(firstChar)) return false;
-			}
+		set.add(words[0]);
+		char last = words[0].charAt(words[0].length()-1);
+		for(int i=1;i<words.length;i++) {
+			String w = words[i];
+			char first = w.charAt(0);
 			
-			
-			
+			if(last != first) return false;
+			//set.add(문자)가 실패하면(=중복으로 들어가면) return false;
+			//
+			if(!set.add(words[i])) return false;
+			last = w.charAt(w.length()-1);
 		}
-		if(set.size() != words.length) return false;
 		return answer;
 	}
 	//3. 같은 숫자는 싫어
 	public static int[] solution3(int[] arr) {
-		int[] answer = {};
-		Set<Integer> set = new HashSet<Integer>();
-		
-		for(int i=0;i<arr.length;i++) set.add(arr[i]);
-		System.out.println(set);
-		return answer;
+		//set의 동작원리를 사용해서 푸는 문제
+		List<Integer> list = new LinkedList<Integer>();
+		int last = -1;
+		for(int a : arr) {
+			if(last == a) continue;
+			last = a;
+			list.add(a);
+		}
+		return list.stream().mapToInt(Integer::intValue).toArray();
 	}
 }
