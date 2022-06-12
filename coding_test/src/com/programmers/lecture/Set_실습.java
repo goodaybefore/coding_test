@@ -1,4 +1,4 @@
-package lecture;
+package com.programmers.lecture;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 
-public class Test220610_실습 {
+public class Set_실습 {
 	
 	public static void main(String[] args) {
 		int q1[] = {4,7,32,43,22,19};

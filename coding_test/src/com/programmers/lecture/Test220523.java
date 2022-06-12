@@ -1,4 +1,4 @@
-package lecture;
+package com.programmers.lecture;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

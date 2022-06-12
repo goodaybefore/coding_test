@@ -1,4 +1,4 @@
-package lecture;
+package com.programmers.lecture;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 
-public class Test220610_강의 {
+public class Set_강의 {
 
 	public static void main(String[] args) {
 		List<Integer> list = new LinkedList<>();
