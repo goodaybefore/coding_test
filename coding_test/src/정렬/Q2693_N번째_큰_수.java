@@ -1,4 +1,4 @@
-package com.programmers.lecture;
+package 정렬;
 
 import java.io.BufferedReader;
 import java.io.IOException;

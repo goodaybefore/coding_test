@@ -132,7 +132,7 @@ public class StackAndQueue_실습 {
 			int seconds = 0;
 			for(int j=i+1;j<prices.length;j++) {
 				seconds++;
-				if(price >= prices[j]) break;;
+				if(price > prices[j]) break;;
 			}
 			answer[i] = seconds;
 		}
