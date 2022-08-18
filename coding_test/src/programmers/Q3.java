@@ -1,4 +1,4 @@
-package programmers.Level1;
+package programmers;
 
 import java.util.Arrays;
 //최대공약수 최소공배수

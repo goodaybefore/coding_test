@@ -1,4 +1,4 @@
-package programmers.Level1;
+package programmers;
 
 public class Q_소수만들기 {
 
